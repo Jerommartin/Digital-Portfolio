@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Your Name - Digital Portfolio</title>
+  <style>
+      body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #002050;
+    padding: 10px;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Martin</h1>
+        <p>Auto mobile engineering</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>jerom martin</p>
+        <p>chairman</p>
+        <p>Automobile</p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Engine drawing</li>
+            <li>Design</li>
+            <li>Auto scanning</li>
+            <li>Vehicle assemble</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects 1</h2>
+        <p>Design for ROLEX car with bullet proff</p>
+     <h2>Projects 2</h2>
+     <p>Made some modification in BMW,DUCATI</p>
+        <!-- Add your project details here -->
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: jerommrtn@gmail.com</p>
+        <p>phone number:9050401125</p>
+    </section>
+    <script>
+      
+<script>
+    const projectSlider = document.getElementById('projectSlider');
+    let currentSlide = 0;
+
+    function changeSlide() {
+        projectSlider.children[currentSlide].style.display = 'none';
+        currentSlide = (currentSlide + 1) % projectSlider.children.length;
+        projectSlider.children[currentSlide].style.display = 'block';
+    }
+
+    // Change slide every 3 seconds
+    setInterval(changeSlide, 3000);
+</script>
+    <footer>
+        <p>&copy; 2023 martin</p>
+    </footer>
+</body>
+</html>
